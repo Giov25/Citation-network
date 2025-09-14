@@ -20,6 +20,7 @@ CREATE TABLE Cita (
 CREATE TABLE Paper (
   DOI VARCHAR(255) PRIMARY KEY,
   titolo VARCHAR(255) NOT NULL,
+  tipo_venue VARCHAR(255), -- Journal, Conference, Workshop
   abstract TEXT,
   bibtex TEXT,
   orcid_autore_principale VARCHAR(255),
@@ -35,9 +36,9 @@ CREATE TABLE PhD_stud (
 );
 
 -- Inserimento del tuo studente
-INSERT INTO PhD_stud (ORCID, nome, cognome, universita) VALUES
-('0009-0004-4055-3942','Giovanni','Patanè','UNICT');
-INSERT INTO PhD_stud (ORCID, nome, cognome, universita) VALUES
-('0009-0006-2760-9889','Rosario','Napoli','UNIME');
-INSERT INTO PhD_stud (ORCID, nome, cognome, universita) VALUES
-('0009-0009-6980-2160','Marialuisa','Lusito','Federico II');
+-- INSERT INTO PhD_stud (ORCID, nome, cognome, universita) VALUES
+-- ('0009-0004-4055-3942','Giovanni','Patanè','UNICT');
+-- INSERT INTO PhD_stud (ORCID, nome, cognome, universita) VALUES
+-- ('0009-0006-2760-9889','Rosario','Napoli','UNIME');
+-- INSERT INTO PhD_stud (ORCID, nome, cognome, universita) VALUES
+-- ('0009-0009-6980-2160','Marialuisa','Lusito','Federico II');
